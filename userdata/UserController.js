@@ -23,6 +23,8 @@ router.put('/:id', function (req, res) {
         res.status(200).send(user);
     });
 });
+
+
 router.post('/', function (req, res) {
     User.create({
       name : req.body.name,
